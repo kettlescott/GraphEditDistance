@@ -1,0 +1,12 @@
+1 create a topology folder in hdfs 
+hadoop fs -mkdir /topology
+2 upload source file to topology folder and you can find the src file input.txt under GraphSimilarity
+hadoop fs -put yourpath/input.txt /topology
+3 Delete output folder before you run the example
+fs -rm -r -f /output
+
+check result 
+
+hadoop fs -cat /output/part-r-00000
+
+
